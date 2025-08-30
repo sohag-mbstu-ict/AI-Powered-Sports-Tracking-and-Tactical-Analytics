@@ -31,8 +31,8 @@ class FootballAIPipeline:
     def __init__(self):
 
         # Load models
-        self.keypoints_model = YOLO("/home/gflmltpc/YOLO_model/roboflow/trained_model/field_keypoints_detector.pt")
-        self.detection_model = YOLO("/home/gflmltpc/YOLO_model/roboflow/trained_model/Player_Referee_Goalkeeper_Detection.pt")
+        self.keypoints_model = YOLO("/home/gflmltpc/YOLO_model/trained_model/field_keypoints_detector.pt")
+        self.detection_model = YOLO("/home/gflmltpc/YOLO_model/trained_model/Player_Referee_Goalkeeper_Detection.pt")
         # self.detection_model = YOLO("/home/gflmltpc/YOLO_model/yolo11x.pt")
         self.BALL_ID = 0
         self.GOALKEEPER_ID = 1
