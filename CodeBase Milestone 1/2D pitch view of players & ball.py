@@ -216,7 +216,7 @@ class FootballAIPipeline:
         video_writer = infer_obj.get_video_writer("output_from_images",(1480,1080))
         # video_writer = infer_obj.get_video_writer("output_from_images",(1300,800))
         
-        input_video_path = "/home/gflmltpc/YOLO_model/roboflow/football-AI/videos/0bfacc_0.mp4"
+        input_video_path = "/home/gflmltpc/YOLO_model/football-AI/videos/0bfacc_0.mp4"
         cap = cv2.VideoCapture(input_video_path)
         fps = cap.get(cv2.CAP_PROP_FPS)
         frame_count = 0  # Counter for frames 
